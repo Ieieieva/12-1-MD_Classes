@@ -7,14 +7,291 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <title>Photo gallery</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">Photo gallery</h1>
+        </div>
+    </header>
 
+    <section class="carousel">
+        <div class="carousel__container js-galeryOne">
+            <div class="carousel__container--photos">
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--first photo__active fade" 
+                        src="https://picsum.photos/id/33/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--second fade" 
+                        src="https://picsum.photos/id/15/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--third fade" 
+                        src="https://picsum.photos/id/25/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fourth fade" 
+                        src="https://picsum.photos/id/9/800/500">
+                </div>
+                <div class="scarousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fifth fade" 
+                        src="https://picsum.photos/id/7/800/500">
+                </div>
+            </div>
+            <div class="carousel__container--btns">
+                <button type="button" class="carousel__button btn-prev js-prev">&#10094;</button>
+                <button type="button" class="carousel__button btn-next js-next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel__container js-galeryTwo">
+            <div class="carousel__container--photos">
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--first photo__active fade" 
+                        src="https://picsum.photos/id/12/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--second fade" 
+                        src="https://picsum.photos/id/19/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--third fade" 
+                        src="https://picsum.photos/id/24/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fourth fade" 
+                        src="https://picsum.photos/id/4/800/500">
+                </div>
+                <div class="scarousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fifth fade" 
+                        src="https://picsum.photos/id/8/800/500">
+                </div>
+            </div>
+            <div class="carousel__container--btns">
+                <button type="button" class="carousel__button btn-prev js-prev">&#10094;</button>
+                <button type="button" class="carousel__button btn-next js-next">&#10095;</button>
+            </div>
+            <div class="carousel__container--dots">
+                <div class="dot dot__active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="carousel__container js-galeryThree">
+            <div class="carousel__container--photos">
+                <div class="carousel__photos">
+                    <img id="image1" 
+                        class="carousel__photo carousel__photo--first js-photo-first photo__active fade" 
+                        src="https://picsum.photos/id/32/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--second js-photo-second fade" 
+                        src="https://picsum.photos/id/27/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--third js-photo-third fade" 
+                        src="https://picsum.photos/id/6/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fourth js-photo-fourth fade" 
+                        src="https://picsum.photos/id/16/800/500">
+                </div>
+                <div class="scarousel__photos">
+                    <img 
+                        class="carousel__photo carousel__photo--fifth js-photo-fifth fade" 
+                        src="https://picsum.photos/id/26/800/500">
+                </div>
+            </div>
+            <div class="carousel__container--btns btns--third">
+                <button type="button" class="carousel__button btn-prev js-prev">&#10094;</button>
+                <button type="button" class="carousel__button btn-next js-next">&#10095;</button>
+            </div>
+            <div class="carousel__container--small">
+                <div class="carousel__small">
+                    <a href="#image1">
+                        <img 
+                            class="carousel__small--photo js-small-one" 
+                            src="https://picsum.photos/id/32/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image1">
+                        <img 
+                            class="carousel__small--photo js-small-two" 
+                            src="https://picsum.photos/id/27/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image1">
+                        <img 
+                            class="carousel__small--photo js-small-three" 
+                            src="https://picsum.photos/id/6/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image1">
+                        <img 
+                            class="carousel__small--photo js-small-four" 
+                            src="https://picsum.photos/id/16/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image1">
+                        <img 
+                            class="carousel__small--photo js-small-five" 
+                            src="https://picsum.photos/id/26/200/125">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel__container--dots">
+                <div class="dot dot__active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="carousel">
+        <div class="carousel__container js-galeryFour">
+            <div class="carousel__container--CTA">
+                <div class="carousel__slideshow">
+                    <a href="#icon">
+                        <img 
+                            src="./assets/images/gallery.png"
+                            title="slideshow" 
+                            class="icon js-icon__slideshow"
+                            id="icon">
+                    </a>
+                </div>
+                <div class="carousel__slideshow--end">
+                    <a href="#icon">
+                        <img 
+                            src="./assets/images/image.png" 
+                            title="end slideshow"
+                            class="icon js-icon__slideshow-end icon__hidden">
+                    </a>
+                </div>
+                <div class="carousel__fullscreen">
+                    <a href="#icon">
+                        <img 
+                            src="./assets/images/fullscreen.png" 
+                            title="fullscreen"
+                            class="icon js-icon__fullscreen">
+                    </a>
+                </div>
+                <div class="carousel__regularcreen">
+                    <a href="#icon">
+                        <img 
+                            src="./assets/images/regularscreen.png" 
+                            title="exit fullscreen"
+                            class="icon js-icon__regularscreen icon__hidden">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel__container--photos">
+                <div class="carousel__photos">
+                    <img 
+                        id="image2" 
+                        class="carousel__photo js-photo-first js-CTA__one photo__active fade" 
+                        src="https://picsum.photos/id/32/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo js-photo-second js-CTA__two fade" 
+                        src="https://picsum.photos/id/27/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo js-photo-third js-CTA__three fade" 
+                        src="https://picsum.photos/id/6/800/500">
+                </div>
+                <div class="carousel__photos">
+                    <img 
+                        class="carousel__photo js-photo-fourth js-CTA__four fade" 
+                        src="https://picsum.photos/id/16/800/500">
+                </div>
+                <div class="scarousel__photos">
+                    <img 
+                        class="carousel__photo js-photo-fifth js-CTA__five fade" 
+                        src="https://picsum.photos/id/26/800/500">
+                </div>
+            </div>
+            <div class="carousel__container--btns btns--third">
+                <button type="button" class="carousel__button btn-prev js-prev">&#10094;</button>
+                <button type="button" class="carousel__button btn-next js-next">&#10095;</button>
+            </div>
+            <div class="carousel__container--small">
+                <div class="carousel__small">
+                    <a href="#image2">
+                        <img 
+                            class="carousel__small--photo js-small-one" 
+                            src="https://picsum.photos/id/32/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image2">
+                        <img 
+                            class="carousel__small--photo js-small-two" 
+                            src="https://picsum.photos/id/27/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image2">
+                        <img 
+                            class="carousel__small--photo js-small-three" 
+                            src="https://picsum.photos/id/6/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image2">
+                        <img 
+                            class="carousel__small--photo js-small-four" 
+                            src="https://picsum.photos/id/16/200/125">
+                    </a>
+                </div>
+                <div class="carousel__small">
+                    <a href="#image2">
+                        <img 
+                            class="carousel__small--photo js-small-five" 
+                            src="https://picsum.photos/id/26/200/125">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel__container--dots">
+                <div class="dot dot__active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
 
     <script src="/scripts.js"></script>
 </body>

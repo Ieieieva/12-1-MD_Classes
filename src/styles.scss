@@ -1,3 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-background: #636b58;
+  --c-main-accent: #e7ec95;
+  --C-secondary-accent: #FFFFFF;
+  --c-content: #faf6eb;
+}
+
 body {
-  background-color: antiquewhite;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  background-color: var(--c-background);
+}
+
+// -----------------HEADER------------------------
+
+.header__title {
+  text-align: center;
+  font-family: 'Fasthand', cursive;
+  font-size: 4rem;
+  padding-top: 0.5em;
+  color: var(--c-content);
+  text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+}
+
+
+// -----------------CAROUSEL------------------------
+
+.carousel__container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel__container--photos {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel__photo {
+  display: none;
+}
+
+.photo__active {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 5px 5px 10px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+// -------------BUTTONS-------------
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background: none;
+  font-size: 4rem;
+  z-index: 2;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+
+  &:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: 1px solid black;
+  }
+}
+
+.btn-prev {
+  left: 1rem;
+}
+
+.btn-next {
+  right: 1rem;
+}
+
+// -------------------------SECOND GALLERY (extended)-----------------------
+
+.carousel__container--dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--c-content);
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.dot__active {
+  background-color: #717171;
+}
+
+
+// -------------------------THIRD GALLERY (extended)-----------------------
+
+.carousel__container--small {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.carousel__small--photo {
+  box-shadow: 0 0 10px;
+  opacity: 0.5;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+// -------------------------FOURTH GALLERY (extended)-----------------------
+
+.carousel__container--CTA {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  padding-right: 6rem;
+  padding-bottom: 20px;
+  
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+}
+
+.icon__hidden {
+  display: none;
+}
+
+.fullscreen {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  animation-name: fadee;
+  animation-duration: 3s;
+  
+}
+@keyframes fadee {
+  from {opacity: .4}
+  to {opacity: 1}
 }
