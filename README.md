@@ -1,10 +1,13 @@
-# html_ts_boilerplate
-To start coding open your terminal and write
+# Photo gallery
+### Developed using TS Classes
+Visit this site to view the project --> https://ievas-photo-gallery.netlify.app/
+---
+To start the project in your IDE run: 
 ```
 npm i
 ```
 
-When all packages have been installed run:
+then:
 ```
 npm start
 ```
